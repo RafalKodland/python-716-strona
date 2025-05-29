@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from random import choice
 
 app = Flask(__name__)
@@ -20,6 +20,8 @@ def hello_world():
 
 @app.route("/losowy_fakt")
 def random_fact():
-    return f"<p>{choice(facts)}</p>"
+    wylosowany_fakt = choice(facts)
+    losowy_kolor = choice(["blue", "black", "red", "green"])
+    return render_template("index.html", fakt = wylosowany_fakt, kolor = losowy_kolor)
 
 app.run(debug=True)
