@@ -1,0 +1,5 @@
+0. (Wykonujemy tylko raz na komputerze) Zainstalować pipenv, komendą pip install pipenv
+
+1. Stworzenie wirtualnego środowiska - polecenie: pipenv shell
+2. Aktywowanie środowiska w Visual Studio Code (Select Python Interpreter)
+3. Teraz biblioteki instalujemy poleceniem pipenv, zamiast pip
